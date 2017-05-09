@@ -1,8 +1,6 @@
-
 *{
   font-family: 'Love Ya Like A Sister', cursive;
   margin: 0 auto;
-
 }
 body{
   background-color: #2A1E5C;
@@ -42,10 +40,10 @@ a{
   flex-direction: row;
 }
 .panda{
-  width: 250px;
-  height: 250px;
+  width: 220px;
+  height: 220px;
   border:  3px solid #C4CBCA;
-  
+
 }
 #pandaPrimero{
     background-image: url(../img/panda1.jpg);
@@ -87,6 +85,13 @@ a{
    margin-top: 30px;
    text-align: justify;
    width: 45%;
-  height: 250px;
-  color: #C4CBCA;
+   height: 250px;
+   color: #C4CBCA;
+}
+
+.closebtn a{
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content:flex-start;
 }
