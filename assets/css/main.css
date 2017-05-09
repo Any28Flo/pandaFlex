@@ -2,6 +2,10 @@
 *{
   font-family: 'Love Ya Like A Sister', cursive;
   margin: 0 auto;
+
+}
+body{
+  background-color: #2A1E5C;
 }
 .container{
   background-color: #3CBBB1;
@@ -32,20 +36,28 @@ a{
 .containerImages{
   display: flex;
   width: 90%;
-  height: 200px;
+  height: 270px;
   margin-top: 50px;
   margin-bottom: 50px;
   flex-direction: row;
 }
-.pandaImages{
-  width: 200px;
-  height: 200px;
-  background-color: cornflowerblue;
+.panda{
+  width: 250px;
+  height: 250px;
+  border:  3px solid #C4CBCA;
+  
 }
-img{
-  width: 190px;
-  height: 190px;
-  border:  5px solid gray;
+#pandaPrimero{
+    background-image: url(../img/panda1.jpg);
+}
+#pandaSegundo{
+    background-image: url(../img/panda2.jpg);
+}
+#pandaTercero{
+    background-image: url(../img/panda3.jpg);
+}
+#pandaCuarto{
+  background-image: url(../img/panda4.jpg);
 }
 .subMenu{
   display: flex;
@@ -59,10 +71,22 @@ img{
   background-color: #EE4266;
   text-align: center;
   text-decoration: none;
-  /*padding-top: 25px;*/
 }
 .link{
   text-decoration: none;
-  
+  color: #C4CBCA;
+}
+.contenido{
+   width: 90%;
+   height: 350px;
+   display: flex;
+   flex-direction: row;
+   margin-top: 15px;
+}
+.columna{
+   margin-top: 30px;
+   text-align: justify;
+   width: 45%;
+  height: 250px;
   color: #C4CBCA;
 }
