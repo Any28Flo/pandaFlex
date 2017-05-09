@@ -2,6 +2,7 @@ var contador=0;
 var bandera=true;
 var flagDos=true;
 var arrayBotones= document.getElementsByClassName("closebtn");
+console.log(arrayBotones);
 Array.prototype.forEach.call(arrayBotones,function(elemento){
   elemento.addEventListener("click",desaparece);
 });
@@ -28,6 +29,7 @@ function restaura(){
   contenedor.style.display="flex";
   Array.prototype.forEach.call(contenedorPandas,function(elemento){
     elemento.style.display="flex";
+    // siblingNode.style.marginLeft="-100px";
   });
 }
 function desapareceColumna(){
