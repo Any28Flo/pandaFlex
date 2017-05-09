@@ -1,4 +1,6 @@
 var contador=0;
+var bandera=true;
+var flagDos=true;
 var arrayBotones= document.getElementsByClassName("closebtn");
 Array.prototype.forEach.call(arrayBotones,function(elemento){
   elemento.addEventListener("click",desaparece);
@@ -25,16 +27,22 @@ function restaura(){
   var contenedor= document.getElementById("contenedor");
   contenedor.style.display="flex";
   Array.prototype.forEach.call(contenedorPandas,function(elemento){
-    console.log(elemento);
     elemento.style.display="flex";
-
   });
 }
 function desapareceColumna(){
-
-  columnas[0].style.display="none";
-
+  if(bandera===true){
+    columnas[0].style.display="none";
+    bandera=false;
+  }else {
+    columnas[0].style.display="flex";
+  }
 }
 function desapareceColumnaIzq(){
-  columnas[1].style.display="none";
+  if(flagDos===true){
+    columnas[1].style.display="none";
+    flagDos=false;
+  }else {
+    columnas[1].style.display="flex";
+  }
 }
